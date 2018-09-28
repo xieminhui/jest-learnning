@@ -56,3 +56,16 @@ test('the data1 is test promise', () => {
       expect(data).toBe('test promise');
    });
 });
+
+//mock
+function forEach(items ,callback) {
+   for(let index = 0; index < items.length; index++) {
+      console.log(callback(items[index]));
+   }
+}
+const mockCallback = jest.fn(x => 42 +x);
+forEach([0, 1], mockCallback);
+
+expect(mockCallback.mock.calls.length).toBe(2);
+
+console.log(mockCallback.mock);

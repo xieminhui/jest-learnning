@@ -11,7 +11,10 @@ module.exports = {
   },
   "globals": {
       __dirname: false,
-      process: false
+      process: false,
+      expect: false,
+      test: false,
+      jest: false
   },
   "rules": {
       "indent": 0,
