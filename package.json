@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "vue-jest": "file:VUE jest/vue-jest"
   }
 }
